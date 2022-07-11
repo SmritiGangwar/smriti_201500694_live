@@ -1,0 +1,152 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live</title>
+</head><body>&lt;<style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    header {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    #logo {
+    
+    width: 120px;
+    height: 70px;
+    border: 2px solid white;
+    margin: 0px;
+    background:linear-gradient(to bottom, rgba(255, 0, 0, 0.85), rgba(195, 113, 249, 0.85));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* font-weight: bold; */
+    font-size:200%;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    }
+    .navigation {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-left: 0%;
+      
+    }
+    nav a {
+        font-family:Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      text-decoration: none;
+      padding: 15px;
+      color: gray;
+    }
+    #home {
+        color:rgb(255, 0, 51);
+    }
+    .img {
+      width: 100%;
+      height: 80vh;
+    }
+.bottom-left {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(15, 106, 107);
+    font-size: 45px;
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  bottom: 160px;
+  left: 100px;
+  color: gray;
+}
+.btn
+{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    border: 1px solid rgb(209, 204, 204);
+    
+}
+    #buy {
+      color: red;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 1px 1px 3px gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+    }
+    img {
+      width: 100%;
+      height: 90%;
+    }
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      height: 100px;
+    }
+  </style>
+
+
+  <header>
+    <nav class="navigation">
+      <h1 id="logo">R</h1>
+      <a href="#" class="abc"><span id="home">Home</span></a>
+      <a href="#" class="abc">Project</a>
+      <a href="#" class="abc">Pages</a>
+      <a href="#" class="abc">Elements</a>
+      <a href="#" class="abc">Blog</a>
+      <a href="#" class="abc">Shop</a>
+      <a href="#" class="abc">Contact</a>
+    </nav>
+    <a href="#"><div id="buy">Buy Rogan --&gt;</div></a>
+  </header>
+  <div class="img">
+    <img src="https://anytimedigitalmarketing.com/wp-content/uploads/2021/01/dm-trends-2020.png" alt="Image">
+    <div class="bottom-left"><p>Digital Agency</p><p> with Excellence</p><p> Services.</p></div>
+  <div class="top-left"><p>The 3 golden Rules profession graphir designer won't</p></div>
+  <div class="btn"><p>70% off for first 3 months</p></div>
+  </div>
+  <footer>
+    <h1 id="name">Smriti Gangwar</h1>
+    <h1 id="roll">201500694</h1>
+    <h1 id="clg">GLA UNIVERSITY,Mathura</h1>
+    <h1 id="date">11/7/2022</h1>
+  </footer>
+  <script>
+    document.getElementById("name").textContent = "Smriti Gangwar";
+    document.getElementById("roll").textContent = "201500694";
+    document.getElementById("clg").textContent = "GLA University,Mathura";
+    window.onload = date();
+    function date() {
+      let d = new Date().toLocaleDateString();
+      let l = d.split("/");
+      var day = l[1],
+        month = l[0],
+        year = l[2];
+      var date = day + "/" + month + "/" + year;
+      document.getElementById("date").textContent = `${date}`;
+    }
+  </script>
+
+
+</body></html>
